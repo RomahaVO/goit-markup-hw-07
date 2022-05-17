@@ -495,22 +495,24 @@ ul,ol {
 
 }
 
-.client-item:last-child{
+.client-list__item:last-child{
     margin-right: 0;
 }
 
-.client-item{
+.client-list__item{
     display: flex;
     margin-right: 30px;
+
 }
 
 
 
-.client-link{
+.client-list__link{
     flex-basis: calc(100%/6 - 30px);
     border: 1px solid var(--silver-icon);
     border-radius: 4px;
     fill: var(--silver-icon);
+    transition: border-color var(--timing-function-trasition), fill var(--timing-function-trasition);
 
 
     width: 170px;
@@ -521,20 +523,18 @@ ul,ol {
     padding-right: 32px;
     padding-bottom: 16px;
     padding-left: 32px;
-
-    transition: border-color var(--timing-function-trasition), fill var(--timing-function-trasition);
 }
 
-.client-link:hover,
-.client-link:focus{
+.client-list__icon{
+}
+
+.client-list__link:hover,
+.client-list__link:focus{
     border-color: var(--akcent-color);
     fill: var(--akcent-color);
 
 }
 
-.client-icon{
-
-}
 
 
 /* ------------------------------- footer ----------------------- */
