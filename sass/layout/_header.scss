@@ -1,0 +1,131 @@
+.header-logo{
+    font-family: 'Raleway', Tahoma, sans-serif;
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    margin-right: 93px;
+}
+
+.logo-akcent{
+    color: var(--akcent-color);
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+
+    min-height: 80px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+}
+
+.header-list{
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    letter-spacing: 0.02em;
+
+}
+
+.header-item:not(:last-child){
+    margin-right: 50px;
+
+}
+
+.header-item{
+    position: relative;
+}
+
+.header-link{
+    color: var(--primery-text-color);
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    transform:  color var(--timing-function-trasition);
+}
+
+.header-link.current::after{
+    content: '';
+    position: absolute;
+    
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--akcent-color);
+    left:0px;
+    bottom: -32px;
+}
+
+.header-link:hover,
+.header-link:focus{
+    color: var(--akcent-color);
+    cursor: pointer;
+}
+
+.header-link.current {
+    color: var(--akcent-color);
+}
+
+.header-connect{
+    margin-left: auto;
+
+}
+
+.header-link-second{
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    letter-spacing: 0.02em;
+}
+
+.header-link-text, .header-link-tel{
+    display: flex;
+    color: var(--second-text-color);
+    text-decoration: none;
+    align-items: center;
+
+    transition:  color var(--timing-function-trasition);
+}
+
+.header-link-tel:hover,
+.header-link-text:hover,
+.header-link-tel:focus,
+.header-link-text:focus{
+    color: var(--akcent-color);
+    cursor: pointer;
+
+}
+
+.header-link-tel{
+    margin-left: 30px;
+
+}
+.header-link-item{
+
+}
+
+.header-link-icon{
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.header{
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
+    /* min-height: 80px; */
+}
