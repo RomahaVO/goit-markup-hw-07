@@ -50,4 +50,12 @@
     letter-spacing: 0.03em;
 
     margin-bottom: 50px;
+
 }
+
+.about{
+    @media screen and (max-width:768px){
+        display: none;
+    }
+}
+

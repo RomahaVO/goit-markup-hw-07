@@ -4,10 +4,22 @@
 
 .address{
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 480px){
+    justify-content: center;
+    }
+    @media screen and (min-widht:1200px){
+        flex-wrap: nowrap;
+    }
 }
 
 .footer-cordenats{
     margin-right: 70px;
+
+    @media screen and (max-width: 480px){
+        text-align: center;
+        }
 }
 
 .footer-logo{
@@ -62,6 +74,12 @@
     flex-direction: column;
 
     margin-top: 12px;
+
+    @media screen and (max-width:480px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 .conect-title{
@@ -79,6 +97,9 @@
 .conect-list{
     display: flex;
     list-style: none;
+    @media screen and (max-width:480px) {
+    }
+
 }
 
 .conect-item{
@@ -117,6 +138,7 @@
 
     margin-left: 93px;
     margin-top: 12px;
+
 }
 
 .footer-subscription-title{
