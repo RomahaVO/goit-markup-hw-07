@@ -4,8 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px; 
-    /* margin-left: -3px;  */
 }
+
 
 $value:1200px;
 
@@ -33,6 +33,7 @@ $value:1200px;
         &:nth-last-child(-n + 3){
         margin-bottom: 0;
         }
+
 }
 
 .portfolio-wrap{

@@ -17,10 +17,20 @@
     /* cursor: default; */
 
     margin-right: 93px;
+
+    @media screen and (max-width:480px){
+    font-size: 24px;
+    }
 }
 
 .logo-akcent-portfolio{
     color: var(--akcent-color);
+}
+
+.header-navigation{
+    @media screen and (max-width:480px){
+        display: none;
+    }
 }
 
 .header-link-portfolio{
