@@ -46,9 +46,9 @@ body {
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
-  position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
+  position: absolute;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
   top: 50%;
@@ -56,6 +56,12 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing-function-trasition), opacity var(--timing-function-trasition), visibility var(--timing-function-trasition);
   opacity: 1;
+}
+@media screen and (max-widht: 1200px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 
 .icon-close-btn {
@@ -77,6 +83,7 @@ body {
 }
 
 .modal-title {
+  width: 100%;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -86,7 +93,7 @@ body {
 }
 
 .modal-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -189,6 +196,12 @@ body {
   margin-right: 7px;
   transition: background-colo var(--timing-function-trasition);
 }
+@media screen and (max-widht: 480px) {
+  .modal-chekc-lable {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
 
 .modal-input-check:checked + .modal-chekc-lable::before {
   background-color: var(--akcent-color);
@@ -257,6 +270,11 @@ body {
 @media screen and (max-width: 480px) {
   .section {
     min-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -569,6 +587,12 @@ body {
 .benefits-list {
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits-list {
     display: flex;
@@ -589,6 +613,11 @@ body {
 @media screen and (max-width: 480px) {
   .benefits-box {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-box {
+    width: 354px;
   }
 }
 
@@ -612,6 +641,14 @@ body {
   }
   .benefits-item:first-child {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    flex-basis: calc(25% - 30px);
+  }
+  .benefits-item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -682,7 +719,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .about {
     display: none;
   }

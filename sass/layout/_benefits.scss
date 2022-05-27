@@ -5,6 +5,12 @@
 .benefits-list{
     list-style: none;
 
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        // margin-right: -30px;
+    }
+
     @media screen and (min-width:1200px) {
         display: flex;
         margin-right: -30px;
@@ -25,6 +31,12 @@
     @media screen and (max-width: 480px){
         width: 450px;
     }
+
+    @media screen and (min-width:768px){
+        width: 354px;
+    }
+
+
 
     // @media screen and (min-width: 1200px){
     
@@ -53,6 +65,14 @@
 
         &:first-child{
             margin-top: 0;
+        }
+    }
+
+    @media screen and (min-width:768px){
+        flex-basis:calc(100%/4 - 30px);
+    
+        &:nth-child(2n+1){
+        margin-right: 30px;
         }
     }
 

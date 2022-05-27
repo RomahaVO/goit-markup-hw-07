@@ -4,9 +4,11 @@
     padding-bottom: 40px;
     padding-left: 40px;
 
+    width: 450px;
+    min-height:581px ;
+
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+
     background-color: rgba(255, 255, 255, 1);
     border-radius: 4px;
 
@@ -15,6 +17,12 @@
     transform: translate(-50%, -50%) scale(1) ;
     transition: transform var(--timing-function-trasition), opacity var(--timing-function-trasition), visibility var(--timing-function-trasition);
     opacity: 1;
+
+    @media screen and (max-widht:1200px) {
+
+    width:450px;
+    min-height: 609px;
+    }
 }
 
 .icon-close-btn{
@@ -38,6 +46,7 @@
 }
 
 .modal-title{
+    width: 100%;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.15;
@@ -47,7 +56,8 @@
 }
 
 .modal-input{
-    width: 448px;
+    // width: 448px;
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -132,6 +142,7 @@
 
 .modal-field-check{
     margin-bottom: 30px;
+
 }
 
 .modal-link{
@@ -158,6 +169,11 @@
         margin-right: 7px;
         transition: background-colo var(--timing-function-trasition);
         }
+
+    @media screen and (max-widht:480px) {
+        font-size: 12px;
+        line-height: 1.2;
+    }    
 }
 
 .modal-input-check:checked + .modal-chekc-lable::before{
