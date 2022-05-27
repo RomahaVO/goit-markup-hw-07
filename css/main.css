@@ -275,13 +275,6 @@ body {
     min-width: 480px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section-second {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .section-third {
   padding-bottom: 94px;
 }
@@ -573,6 +566,12 @@ body {
   width: 360px;
   margin: auto;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .benefits {

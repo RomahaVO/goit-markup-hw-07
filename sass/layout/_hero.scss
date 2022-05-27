@@ -42,4 +42,9 @@
     margin: auto;
     
     padding-bottom: 30px;
+
+    @media screen and (max-width: 480px){
+    margin-right: auto;
+    margin-left: auto;
+    }
 }
