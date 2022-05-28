@@ -20,7 +20,7 @@
 .benefits-box {
     display: flex;
     background: #F5F4FA;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     border-radius: 4px; 
     margin-bottom: 30px;
@@ -36,11 +36,10 @@
         width: 354px;
     }
 
+    @media screen and (min-width:1200px){
+        width: 270px;
 
-
-    // @media screen and (min-width: 1200px){
-    
-    // }
+    }
 }
 
 .benefits-title{
