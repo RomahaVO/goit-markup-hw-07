@@ -4,32 +4,33 @@
 
 .address{
     display: flex;
-    // flex-wrap: wrap;
 
     @media screen and (max-width: 480px){
-    // justify-content: center;
     display: block;
     }
     
-    @media screen and (min-widht:368px){
-    flex-wrap: wrap;
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     
-    @media screen and (min-widht:1200px){
-        // flex-wrap: nowrap;
+    @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
     }
 }
 
 .footer-cordenats{
-
-
     @media screen and (max-width: 480px){
         text-align: center;
         }
 
-    @media screen and (min-width: 1200px){
-        margin-right: 70px;
-        }
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+    margin-right: 70px;
+    }
 }
 
 .footer-logo{
@@ -82,12 +83,21 @@
 .footer-conect{
     display: flex;
     flex-direction: column;
+    margin-right: 12px;
 
-    margin-top: 12px;
 
     @media screen and (max-width:480px) {
         align-items: center;
         margin-top: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
+
+
+    @media screen and (min-width:1200px) {
+
     }
 
 }
@@ -107,9 +117,6 @@
 .conect-list{
     display: flex;
     list-style: none;
-    @media screen and (max-width:480px) {
-    }
-
 }
 
 .conect-item{
@@ -144,19 +151,28 @@
 .footer-subscription{
     display: flex;
     flex-direction: column;
-    /* align-items: baseline; */
-
-
 
     @media screen and (max-width:480px) {
         align-items: center;
         margin-top: 60px;
     }
 
+    @media screen and (min-width:768px) {
+    margin-top: 60px;
+    align-items: center;
+    }
+
     @media screen and (min-width:1200px) {
         margin-left: 93px;
         margin-top: 12px;
     }
+
+}
+
+.footer-subscription-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
