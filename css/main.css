@@ -389,7 +389,7 @@ body {
     margin-left: 125px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-subscription-btn {
     margin-top: 20px;
   }
@@ -769,7 +769,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .team-item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
   }
   .team-item:last-child {
@@ -986,24 +986,18 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1200px) {
-  .address {
-    flex-wrap: nowrap;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .footer-cordenats {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-cordenats {
     text-align: center;
   }
@@ -1071,11 +1065,17 @@ body {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-conect {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-conect {
+    margin-right: 0;
+  }
+}
+
 .conect-title {
   font-style: normal;
   font-weight: 700;
@@ -1126,7 +1126,7 @@ body {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-subscription {
     margin-top: 60px;
     align-items: center;
@@ -1135,14 +1135,21 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-subscription {
     margin-left: 93px;
-    margin-top: 12px;
+    margin-top: 0;
   }
 }
 
-.footer-subscription-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .footer-subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription-form {
+    flex-direction: row;
+  }
 }
 
 .footer-subscription-title {
