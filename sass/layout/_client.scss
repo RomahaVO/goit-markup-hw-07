@@ -22,7 +22,8 @@
     display: block;
 
     @media screen and (max-width:480px){
-    margin-bottom: 30px;    
+        // max-width: 100%;
+        margin-bottom: 30px;    
         &:nth-last-child(-n+2){
             margin-bottom: 0;
         }

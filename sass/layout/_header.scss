@@ -9,9 +9,13 @@
 
     margin-right: 93px;
 
-    @media screen and (max-widht:480px) {
-    font-size: 24px;
-    }
+    @media screen and (max-width:480px){
+        font-size: 24px;
+        }
+    
+    @media screen and (min-width:481px) and (max-width:1199px) {
+        font-size: 24px;
+        }
 }
 
 .logo-akcent{
@@ -112,6 +116,11 @@
     line-height: 1.14;
     list-style: none;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        margin-left: 84px;
+        }
 }
 
 .header-link-text{
@@ -143,6 +152,11 @@
             color: var(--akcent-color);
             cursor: pointer;
         }
+
+        @media screen and (min-width:768px)and (max-width:1199px) {
+        margin-left: 0;
+        margin-top: 10px;
+        }    
 }
 
 .header-link-icon{

@@ -423,7 +423,12 @@ body {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-@media screen and (max-widht: 480px) {
+@media screen and (max-width: 480px) {
+  .header-logo {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .header-logo {
     font-size: 24px;
   }
@@ -507,6 +512,12 @@ body {
   list-style: none;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .header-link-second {
+    flex-wrap: wrap;
+    margin-left: 84px;
+  }
+}
 
 .header-link-text {
   display: flex;
@@ -531,6 +542,12 @@ body {
 .header-link-tel:hover, .header-link-tel:focus {
   color: var(--akcent-color);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-link-tel {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 .header-link-icon {
@@ -1179,7 +1196,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .footer-subscription-mail {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1203,7 +1220,6 @@ body {
     display: block;
   }
 }
-
 .portfolio-list-item {
   background: var(--title-white-color);
   border: 1px solid #EEEEEE;
@@ -1226,7 +1242,18 @@ body {
     margin-bottom: 0;
   }
 }
-@media screen and (max-widht: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list-item {
+    width: 354px;
+  }
+  .portfolio-list-item:nth-child(even) {
+    margin-right: 0;
+  }
+  .portfolio-list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-widht: 1200px) {
   .portfolio-list-item:nth-child(3n+3) {
     margin-right: 0;
   }
@@ -1304,6 +1331,11 @@ body {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .header-logo-portfolio {
+    font-size: 24px;
+  }
+}
 
 .logo-akcent-portfolio {
   color: var(--akcent-color);
@@ -1361,6 +1393,12 @@ body {
 }
 .header-tel-portfolio:hover, .header-tel-portfolio:focus {
   color: var(--akcent-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-tel-portfolio {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 :root {
