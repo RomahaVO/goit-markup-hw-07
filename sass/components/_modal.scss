@@ -4,7 +4,7 @@
     padding-bottom: 40px;
     padding-left: 40px;
 
-    width: 450px;
+    width: 528px;
     min-height:581px ;
 
     position: absolute;
@@ -18,12 +18,13 @@
     transition: transform var(--timing-function-trasition), opacity var(--timing-function-trasition), visibility var(--timing-function-trasition);
     opacity: 1;
 
-    @media screen and (max-widht:1200px) {
-
-    width:450px;
-    min-height: 609px;
-    }
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 450px;
+        min-height: 609px;
+    } 
 }
+
+
 
 .icon-close-btn{
     width: 30px;
@@ -169,11 +170,11 @@
         margin-right: 7px;
         transition: background-colo var(--timing-function-trasition);
         }
-
-    @media screen and (max-widht:480px) {
+    
+    @media screen and (min-width:480px) and (max-width:1199px) {
         font-size: 12px;
         line-height: 1.2;
-    }    
+        }  
 }
 
 .modal-input-check:checked + .modal-chekc-lable::before{
@@ -192,6 +193,11 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--akcent-color);
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.2;
+        }  
 }
 
 .modal-btn-box{
