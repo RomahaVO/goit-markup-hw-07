@@ -61,6 +61,7 @@ body {
   .modal {
     width: 450px;
     min-height: 609px;
+    overflow: auto;
   }
 }
 
@@ -565,16 +566,31 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .mob-menu-button-open {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: fill var(--timing-function-trasition);
+  }
+  .mob-menu-button-open:hover, .mob-menu-button-open:hover {
+    fill: var(--akcent-color);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .mob-menu-button {
     display: block;
     margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
-    transform: color var(--timing-function-trasition);
+    transition: fill var(--timing-function-trasition);
   }
-  .mob-menu-button:hover, .mob-menu-button:focus {
-    color: var(--akcent-color);
+  .mob-menu-button:hover, .mob-menu-button:hover {
+    fill: var(--akcent-color);
     cursor: pointer;
   }
 }
@@ -585,14 +601,27 @@ body {
   left: 0;
   z-index: 1;
   background-color: #ffffff;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
-}
-
-.modal-menu-box {
-  padding-right: 40px;
+  padding-right: 15px;
   padding-bottom: 48px;
   padding-left: 40px;
+}
+.mob-menu .modal-menu-box {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+@media screen and (min-width: 481px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu-top {
+  width: 100%;
 }
 
 .list {
@@ -617,9 +646,6 @@ body {
 
 .mob-item {
   margin-bottom: 32px;
-}
-.mob-item:last-child {
-  margin-bottom: 202px;
 }
 
 .mob-link-tel {
@@ -666,6 +692,10 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero {
