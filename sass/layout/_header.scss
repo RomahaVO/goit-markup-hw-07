@@ -186,27 +186,31 @@ position: relative;
         cursor: pointer;
         }
         }
+        @media screen and (min-width:481px) {
+        display: none;
+        }
 }
 
 .mob-menu-button{
     @media screen and (max-width:480px){
 
-    display: block;
-    margin-left: auto;
-    // margin-right: 15px;
-    // margin-top: 10px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+        display: block;
+        margin-left: auto;
+        // margin-right: 15px;
+        // margin-top: 10px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
 
-    transition: fill var(--timing-function-trasition);
+        transition: fill var(--timing-function-trasition);
 
-    &:hover,
-    &:hover{
-    fill: var(--akcent-color);
-    cursor: pointer;
+        &:hover,
+        &:hover{
+        fill: var(--akcent-color);
+        cursor: pointer;
+        }
     }
-    }
+
 }
 
 .mob-menu{
