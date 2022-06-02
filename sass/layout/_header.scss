@@ -229,13 +229,16 @@ position: relative;
             flex-direction: column;
             height: 100%;
             justify-content: space-between;
-            transform: scale(1) ;
-            transition: transform var(--timing-function-trasition),;
-
+            transform: scale(1);
+            transition: transform var(--timing-function-trasition);
         }
     @media screen and (min-width:481px) {
         display: none;
     }
+}
+
+.mob-menu .is-hidden {
+transform: scale(0,8);
 }
 
 .mob-menu-top {

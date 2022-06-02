@@ -627,6 +627,10 @@ body {
   }
 }
 
+.mob-menu .is-hidden {
+  transform: scale(0, 8);
+}
+
 .mob-menu-top {
   width: 100%;
 }
