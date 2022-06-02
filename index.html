@@ -174,7 +174,22 @@
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
-                    <li class="team-item"><img src="./images/imgigor.jpg" alt="Игорь Демьяненко" width="270" class="team-img">
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="
+                            ./images/imgigor.jpg x1,
+                            ./images/imgigor@2x.jpg x2
+                            "media="(min-width:1200px)"> 
+                            <source srcset="
+                            ./images/imgigor-tab.jpg x1,
+                            ./images/imgigor-tab@2x.jpg x2
+                            "media="(min-width:768px)">
+                            <source srcset="
+                            ./images/imgigor-mob.jpg x1,
+                            ./images/imgigor-mob@2x.jpg x2
+                            "media="(max-width:480px)">
+                            <img src="./images/imgigor.jpg" alt="Игорь Демьяненко"  class="team-img">
+                        </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Игорь Демьяненко</h3>
                             <p lang="en" class="team-text">Product Designer</p>
@@ -210,7 +225,18 @@
                             </ul>
                         </div>
                     </li>    
-                    <li class="team-item"><img src="./images/imgolga.jpg" alt="Ольга Репина" width="270" class="team-img">
+                    <li class="team-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                            ./images/imgolga.jpg x1,
+                            ./images/imgolga@2x.jpg x2">
+                            <source media="(min-width: 768px)" srcset="
+                            ./images/imgolga-tab.jpg x1,
+                            ./images/imgolga-tab@2x.jpg x2">
+                            <source media="(max-width: 480px)" srcset="
+                            ./images/imgolga-mob.jpg x1,
+                            ./images/imgolga-mob@2x.jpg x2">
+                        </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Ольга Репина</h3>
                             <p lang="en" class="team-text">Frontend Developer</p>
@@ -246,7 +272,13 @@
                             </ul>
                         </div>
                     </li>    
-                    <li class="team-item"><img src="./images/imgnik.jpg" alt="Николай Тарасов" width="270" class="team-img">
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="
+                            ./images/imgnik.jpg x1,
+                            ./images/imgnik-2x.jpg x2">
+                            <img src="./images/imgnik.jpg" alt="Николай Тарасов" width="270" class="team-img">
+                        </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Николай Тарасов</h3>
                             <p lang="en" class="team-text">Marketing</p>
@@ -282,7 +314,13 @@
                             </ul>
                         </div>
                     </li>    
-                    <li class="team-item"><img src="./images/imgmik.jpg" alt="Михаил Ермаков" width="270" class="team-img">
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="
+                            ./images/imgmik.jpg x1,
+                            ./images/imgmik-2x.jpg x2">
+                            <img src="./images/imgmik.jpg" alt="Михаил Ермаков" width="270" class="team-img">
+                        </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Михаил Ермаков</h3>
                             <p lang="en" class="team-text">UI Designer</p>
