@@ -150,19 +150,34 @@
                 <ul class="about-list">
                     <li class="about-list__item">
                         <!-- <div class="about-item-thumb"> -->
-                            <img src="./images/img.jpg" alt="верстка" width="370" class="about-list__img" >
+                            <picture>
+                                <source srcset="
+                                ./images/img.jpg 1x,
+                                ./images/img@2x.jpg 2x">
+                                <img src="./images/img.jpg" alt="верстка" width="370" class="about-list__img" >
+                            </picture>
                             <p class="about-list__text">Десктопные приложения</p>
                         <!-- </div> -->
                     </li>
                     <li class="about-list__item">
                         <!-- <div class="about-item-thumb"> -->
-                            <img src="./images/img-2.jpg" alt="дизайн приложения" width="370" class="about-list__img">
+                            <picture>
+                                <source srcset="
+                                ./images/img-2.jpg 1x,
+                                ./images/img-2@2x.jpg 2x">
+                                <img src="./images/img-2.jpg" alt="дизайн приложения" width="370" class="about-list__img">
+                            </picture>
                             <p class="about-list__text">Мобильные приложения</p>
                         <!-- </div> -->
                     </li>
                     <li class="about-list__item">
                         <!-- <div class="about-item-thumb"> -->
-                            <img src="./images/img-3.jpg" alt="подбор цвета" width="370" class="about-list__img">
+                            <picture>
+                                <source srcset="
+                                ./images/img-3.jpg 1x,
+                                ./images/img-3@2x.jpg 2x">
+                                <img src="./images/img-3.jpg" alt="подбор цвета" width="370" class="about-list__img">
+                            </picture>
                             <p class="about-list__text">Дизайнерские решения</p>
                         <!-- </div> -->
                     </li>
@@ -177,16 +192,16 @@
                     <li class="team-item">
                         <picture>
                             <source srcset="
-                            ./images/imgigor.jpg x1,
-                            ./images/imgigor@2x.jpg x2
+                            ./images/imgigor.jpg 1x,
+                            ./images/imgigor@2x.jpg 2x
                             "media="(min-width:1200px)"> 
                             <source srcset="
-                            ./images/imgigor-tab.jpg x1,
-                            ./images/imgigor-tab@2x.jpg x2
+                            ./images/imgigor-tab.jpg 1x,
+                            ./images/imgigor-tab@2x.jpg 2x
                             "media="(min-width:768px)">
                             <source srcset="
-                            ./images/imgigor-mob.jpg x1,
-                            ./images/imgigor-mob@2x.jpg x2
+                            ./images/imgigor-mob.jpg 1x,
+                            ./images/imgigor-mob@2x.jpg 2x
                             "media="(max-width:480px)">
                             <img src="./images/imgigor.jpg" alt="Игорь Демьяненко"  class="team-img">
                         </picture>
@@ -228,15 +243,17 @@
                     <li class="team-item">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="
-                            ./images/imgolga.jpg x1,
-                            ./images/imgolga@2x.jpg x2">
+                            ./images/imgolga.jpg 1x,
+                            ./images/imgolga@2x.jpg 2x">
                             <source media="(min-width: 768px)" srcset="
-                            ./images/imgolga-tab.jpg x1,
-                            ./images/imgolga-tab@2x.jpg x2">
+                            ./images/imgolga-tab.jpg 1x,
+                            ./images/imgolga-tab@2x.jpg 2x">
                             <source media="(max-width: 480px)" srcset="
-                            ./images/imgolga-mob.jpg x1,
-                            ./images/imgolga-mob@2x.jpg x2">
+                            ./images/imgolga-mob.jpg 1x,
+                            ./images/imgolga-mob@2x.jpg 2x">
+                            <img src="./images/imgolga.jpg" alt="Ольга Репина" class="team-img">
                         </picture>
+
                         <div class="team-text-block">
                             <h3 class="team-title-second">Ольга Репина</h3>
                             <p lang="en" class="team-text">Frontend Developer</p>
@@ -273,11 +290,18 @@
                         </div>
                     </li>    
                     <li class="team-item">
+
                         <picture>
-                            <source srcset="
-                            ./images/imgnik.jpg x1,
-                            ./images/imgnik-2x.jpg x2">
-                            <img src="./images/imgnik.jpg" alt="Николай Тарасов" width="270" class="team-img">
+                            <source media="(min-width: 1200px)" srcset="
+                            ./images/imgnik.jpg 1x,
+                            ./images/imgnik@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="
+                            ./images/imgnik-tab.jpg 1x,
+                            ./images/imgnik-tab@2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="
+                            ./images/imgnik-mob.jpg 1x,
+                            ./images/imgnik-mob@2x.jpg 2x">
+                            <img src="./images/imgnik.jpg" alt="Николай Тарасов" class="team-img">
                         </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Николай Тарасов</h3>
@@ -316,10 +340,16 @@
                     </li>    
                     <li class="team-item">
                         <picture>
-                            <source srcset="
-                            ./images/imgmik.jpg x1,
-                            ./images/imgmik-2x.jpg x2">
-                            <img src="./images/imgmik.jpg" alt="Михаил Ермаков" width="270" class="team-img">
+                            <source media="(min-width: 1200px)" srcset="
+                            ./images/imgmik.jpg 1x,
+                            ./images/imgmik@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="
+                            ./images/imgmik-tab.jpg 1x,
+                            ./images/imgmik-tab@2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="
+                            ./images/imgmik-mob.jpg 1x,
+                            ./images/imgmik-mob@2x.jpg 2x">
+                            <img src="./images/imgmik.jpg" alt="Михаил Ермаков" class="team-img">
                         </picture>
                         <div class="team-text-block">
                             <h3 class="team-title-second">Михаил Ермаков</h3>
