@@ -51,8 +51,8 @@
                                 </svg>
                             </button>
                             <ul class="mob-list list">
-                                <li class="mob-item"><a  href="./index.html" class="mob-link current" >Студия</a></li>
-                                <li class="mob-item"><a href="./portfolio.html" class="mob-link">Портфолио</a></li>
+                                <li class="mob-item"><a  href="./index.html" class="mob-link" >Студия</a></li>
+                                <li class="mob-item"><a href="./portfolio.html" class="mob-link current">Портфолио</a></li>
                                 <li class="mob-item"><a href="/" class="mob-link">Контакты</a></li>
                             </ul>
                         </div>
@@ -95,7 +95,18 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
                         <div class="portfolio-wrap">
-                            <img src="./imagesportfolio/tex.jpg" alt="Веб-сайт" width="370"/>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="
+                                ./imagesportfolio/tex.jpg 1x,
+                                ./imagesportfolio/tex@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="
+                                ./imagesportfolio/tex-tab.jpg 1x,
+                                ./imagesportfolio/tex-tab@2x.jpg 2x">
+                                <source media="(max-width: 480px)" srcset="
+                                ./imagesportfolio/tex-mob.jpg 1x,
+                                ./imagesportfolio/tex-mob@2x.jpg 2x">
+                                <img src="./imagesportfolio/tex.jpg" alt="Веб-сайт"/>
+                            </picture>
                             <p class="portfolio-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="portfolio-text-block">
@@ -129,7 +140,7 @@
                             <source media="(min-width: 768px)" srcset="
                             ./imagesportfolio/sea-tab.jpg 1x,
                             ./imagesportfolio/sea-tab@2x.jpg 2x">
-                            <source media="(max-width: )" srcset="
+                            <source media="(max-width: 480px)" srcset="
                             ./imagesportfolio/sea-mob.jpg 1x,
                             ./imagesportfolio/sea-mob@2x.jpg 2x">
                             <img src="./imagesportfolio/sea.jpg" alt="Риба"/>

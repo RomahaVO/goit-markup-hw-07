@@ -1420,7 +1420,7 @@ body {
 }
 @media screen and (max-widht: 480px) {
   .portfolio-list-item {
-    max-width: 450px;
+    width: 450px;
     margin-bottom: 30px;
   }
   .portfolio-list-item:last-child {
@@ -1450,6 +1450,11 @@ body {
 .portfolio-wrap {
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-widht: 480px) {
+  .portfolio-wrap {
+    width: 450px;
+  }
 }
 
 .portfolio-top-text {
