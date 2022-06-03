@@ -20,8 +20,8 @@
     transition: transform var(--timing-function-trasition), opacity var(--timing-function-trasition), visibility var(--timing-function-trasition);
     opacity: 1;
 
-    @media screen and (min-width:480px) and (max-width:1199px) {
-        width: 450px;
+    @media screen and (min-width:320px) and (max-width:1199px) {
+        max-width: 450px;
         min-height: 609px;
         overflow: auto;
     } 

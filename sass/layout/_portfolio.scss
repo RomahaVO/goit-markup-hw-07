@@ -30,7 +30,7 @@ $value:1200px;
         }
 
         width: calc($value / 3 ) -30px;
-        max-width: 370px;
+        max-width: 100%;
         margin-right: 30px;
         margin-bottom: 30px;
 
@@ -39,7 +39,7 @@ $value:1200px;
 
 
     @media  screen and (max-widht:480px) {
-        width: 450px;
+        // min-width: 450px;
         margin-bottom: 30px;
         &:last-child{
         margin-bottom: 0;
@@ -47,7 +47,7 @@ $value:1200px;
     } 
     
     @media screen and (min-width:768px) and (max-width:1199px) {
-        width: 354px;
+        // width: 354px;
 
         &:nth-child(even){
             margin-right: 0;
@@ -66,8 +66,10 @@ $value:1200px;
             margin-bottom: 0;
             }
     }
+}
 
-
+.portfolio-pictures{
+    max-width: 100%;
 }
 
 .portfolio-wrap{
