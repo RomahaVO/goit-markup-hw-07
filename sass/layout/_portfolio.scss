@@ -5,13 +5,9 @@
     flex-wrap: wrap;
     margin-right: -30px; 
 
-    @media  screen and (max-widht:480px) {
-    display: block;
-    } 
-    
-    @media screen and (max-widht:1200px) {
-display: none;
-    }
+    @media screen and (min-width:320px) and (max-width:767px) {
+        display: block;
+        }
 }
 
 
@@ -34,21 +30,14 @@ $value:1200px;
         margin-right: 30px;
         margin-bottom: 30px;
 
-
-
-
-
-    @media  screen and (max-widht:480px) {
-        // min-width: 450px;
+    @media screen and (min-width:320px) and (max-width:767px) {
         margin-bottom: 30px;
         &:last-child{
         margin-bottom: 0;
         }
-    } 
+    }
     
     @media screen and (min-width:768px) and (max-width:1199px) {
-        // width: 354px;
-
         &:nth-child(even){
             margin-right: 0;
         }
@@ -76,7 +65,7 @@ $value:1200px;
     position: relative;
     overflow: hidden; 
 
-    @media  screen and (max-widht:480px) {
+    @media screen and (min-width:320px) and (max-width:767px) {
         width: 450px;
     }
 }
