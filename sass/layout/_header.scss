@@ -158,42 +158,39 @@ position: relative;
         @media screen and (min-width:320px) and (max-width:767px) {
             display: block;
             margin-left: auto;
-            // margin-right: 15px;
-            // margin-top: 10px;
             padding: 0;
             border: none;
             background-color: transparent;
         
             transition: fill var(--timing-function-trasition);
     
-            &:hover,
-            &:hover{
-            fill: var(--akcent-color);
-            cursor: pointer;
+                &:hover,
+                &:focus{
+                fill: var(--akcent-color);
+                cursor: pointer;
+                    }
             }
+        @media screen and (min-width:768px) {
+            display: none;
             }
-            @media screen and (min-width:768px) {
-                display: none;
-                }
 }
 
 .mob-menu-button{
     @media screen and (min-width:320px) and (max-width:767px) {
         display: block;
         margin-left: auto;
-        // margin-right: 15px;
-        // margin-top: 10px;
+        margin-top: 10px;
         padding: 0;
         border: none;
         background-color: transparent;
 
         transition: fill var(--timing-function-trasition);
 
-        &:hover,
-        &:hover{
-        fill: var(--akcent-color);
-        cursor: pointer;
-        }
+            &:hover,
+            &:focus{
+            fill: var(--akcent-color);
+            cursor: pointer;
+            }
         }
 
 }
@@ -205,12 +202,13 @@ position: relative;
         z-index: 1;
     
         background-color: #ffffff;
-        min-width: 100vw;
+        width: 100vw;
         height: 100vh;
             padding-right: 15px;
             padding-bottom: 48px;
             padding-left: 40px;
         .modal-menu-box{
+
             overflow-y: auto;
             display: flex;
             flex-direction: column;
@@ -223,6 +221,7 @@ position: relative;
         display: none;
     }
 }
+
 
 .mob-menu .is-hidden {
 transform: scale(0,8);

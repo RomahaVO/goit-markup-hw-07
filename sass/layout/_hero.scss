@@ -59,9 +59,9 @@
     color:var(--title-white-color);
     font-weight: 900;
     font-size: 26px;
-    // font-size: 44px;
+
     line-height: 1.6;
-    // line-height: 1.4;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -71,5 +71,9 @@
     
     padding-bottom: 30px;
 
-
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+        width: 696px;
+    }
 }
