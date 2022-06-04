@@ -14,7 +14,6 @@
 $value:1200px;
 
 .portfolio-list-item{
-    // flex-basis: calc(1200px/3 -30px);
     background: var(--title-white-color);
     border: 1px solid #EEEEEE;
 
@@ -45,8 +44,7 @@ $value:1200px;
             margin-bottom: 0;
         }
     }
-    
-    @media  screen and (min-widht:1200px){
+    @media screen and (min-width:1200px) {
         &:nth-child(3n +3){
             margin-right: 0;
             }
