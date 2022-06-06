@@ -285,12 +285,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .section-second {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 .section-third {
   padding-bottom: 94px;
@@ -862,6 +856,9 @@ body {
   }
   .benefits-item:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .benefits-item:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
